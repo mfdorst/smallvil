@@ -1,0 +1,12 @@
+[package]
+name = "smallvil"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tracing-subscriber = { version = "0.3.16", features = ["env-filter"] }
+bitflags = "1"
+
+[dependencies.smithay]
+git = "https://github.com/smithay/smithay.git"
+features = ["backend_winit", "wayland_frontend", "desktop"]
